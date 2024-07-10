@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty Webowe - Wizytówka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .portfolio, .testimonials {
+            margin-bottom: 40px;
+        }
+        .service-item, .portfolio-item, .testimonial-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Projekty Webowe</h1>
+    <p>Tworzymy nowoczesne i funkcjonalne strony internetowe</p>
+</header>
+
+<nav>
+    <a href="#services">Oferta</a>
+    <a href="#portfolio">Realizacje</a>
+    <a href="#testimonials">Rekomendacje</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<div class="container">
+
+    <section id="services" class="services">
+        <h2>Oferta</h2>
+        <div class="service-item">
+            <h3>Strony internetowe</h3>
+            <p>Prosta strona wizytówka (kilka podstron): 500 - 2000 zł</p>
+            <p>Strona z bardziej zaawansowanymi funkcjami (formularze, interakcje): 2000 - 5000 zł</p>
+        </div>
+        <div class="service-item">
+            <h3>Sklepy internetowe</h3>
+            <p>Prosta platforma (np. na WooCommerce, Shopify): 1000 - 3000 zł</p>
+            <p>Bardziej zaawansowane sklepy z dodatkowymi funkcjami: 3000 - 8000 zł</p>
+        </div>
+        <div class="service-item">
+            <h3>Tworzenie nazw i logo</h3>
+            <p>Nazwa firmy/produktu: 200 - 1000 zł</p>
+            <p>Proste logo: 300 - 1000 zł</p>
+            <p>Bardziej złożone logo lub pakiet identyfikacji wizualnej: 1000 - 3000 zł</p>
+        </div>
+        <div class="service-item">
+            <h3>Copywriting</h3>
+            <p>Prosty tekst (np. artykuł blogowy, opis produktu): 50 - 150 zł za 1000 znaków</p>
+            <p>Teksty bardziej specjalistyczne (np. teksty SEO, treści marketingowe): 150 - 300 zł za 1000 znaków</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Realizacje</h2>
+        <div class="portfolio-item">
+            <h3>Projekt 1</h3>
+            <p>Opis projektu 1</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projekt 2</h3>
+            <p>Opis projektu 2</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projekt 3</h3>
+            <p>Opis projektu 3</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projekt 4</h3>
+            <p>Opis projektu 4</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Rekomendacje</h2>
+        <div class="testimonial-item">
+            <p>"Najlepsze usługi webowe, z jakich korzystałem!" - Jan Kowalski</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Profesjonalne podejście i szybka realizacja." - Anna Nowak</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Polecam wszystkim, pełne zadowolenie." - Piotr Wiśniewski</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Świetna jakość usług za rozsądną cenę." - Maria Kaczmarek</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Jestem bardzo zadowolony z wykonanej strony." - Krzysztof Lewandowski</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Profesjonaliści w każdym calu." - Katarzyna Wójcik</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Usługi na najwyższym poziomie." - Tomasz Zieliński</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Wszystko zgodnie z ustaleniami, polecam." - Paweł Kamiński</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Nie mogłem trafić lepiej." - Agnieszka Piotrowska</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Pełen profesjonalizm i szybka realizacja." - Wojciech Malinowski</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <form action="mailto:kam-cza2022@wp.pl" method="post" enctype="text/plain">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>Projekty Webowe | NIP: 123-456-78-90 | E-mail: kam-cza2022@wp.pl</p>
+    <p>&copy; 2024 Projekty Webowe. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
